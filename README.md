@@ -10,6 +10,11 @@
 
 FileSearcher-Brit is a high-performance command-line tool for locating files by modification timestamp across directory structures. Built with Go for speed and cross-platform compatibility.
 
+> [!NOTE]
+> **The Problem:** You know you worked on that .sh file in March 2024, and it's *somewhere* in your `~/projects` folder but you have 50+ project subdirectories and don't remember which one.
+> 
+> **The Solution:** FileSearcher-Brit recursively scans entire directory trees by modification date. Point it at `~/projects`, specify March 2024, and it finds every matching file across all subdirectories - with support for partial date matching (year only, month only, or exact date).
+
 ## Table of Contents
 
 - [Overview](#overview)
