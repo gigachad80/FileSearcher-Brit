@@ -187,19 +187,10 @@ The tool supports flexible date filtering with **partial matching** capabilities
 | `-m 1 -y 2024` | **Partial:** All files modified in January 2024 (any day) | January 1-31, 2024 |
 | `-dt 15 -m 1 -y 2024` | **Exact:** Files modified on exactly January 15, 2024 | Only 2024-01-15 |
 | `-all 15/1/2024` | **Exact:** Files modified on exactly January 15, 2024 | Only 2024-01-15 (overrides `-dt`/`-m`/`-y`) |
-
-**Key Feature:** Unlike most tools, FileSearcher-Brit supports **partial date matching** - you can search by year alone, month alone, or any combination. The `-all` flag takes precedence over individual flags when specified.
+>[!NOTE]
+>**Key Feature:** Unlike most tools, FileSearcher-Brit supports **partial date matching** - you can search by year alone, month alone, or any combination. The `-all` flag takes precedence over individual flags when specified.
 
 ## Performance
-
-### Benchmark Results
-
-| Test Scenario | Files Scanned | Extensions | Time | Speed |
-|---------------|---------------|------------|------|-------|
-| Small project | 500 files | 3 extensions | ~25ms | 20,000 files/sec |
-| Medium project | 5,000 files | 10 extensions | ~250ms | 20,000 files/sec |
-| Large project | 50,000 files | 20 extensions | ~2.5s | 20,000 files/sec |
-
 ### Optimization Details
 
 **Extension Matching:** O(1) hash map lookup
@@ -245,7 +236,7 @@ filepath.WalkDir(dir, func(path string, d os.DirEntry, err error) error {
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GNU GPL 3.0 License - see the LICENSE file for details.
 
 ## Contact
 
