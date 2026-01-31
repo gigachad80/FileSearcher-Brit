@@ -207,11 +207,6 @@ if allowedExts[ext] { /* instant lookup */ }
 
 **UI Throttling:** Progress updates are throttled to every 50 files to ensure terminal I/O doesn't bottleneck the Go runtime's scanning speed.
 
-**Typical Performance:**
-- 20,000+ files scanned per second
-- 10x faster than O(n) loop-based extension matching
-- Minimal memory footprint (~50-100 MB)
-
 ## Technical Details
 
 ### Recursive Scanning
