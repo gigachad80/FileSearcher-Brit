@@ -6,6 +6,7 @@
 ![Go Version](https://img.shields.io/badge/Go-1.16%2B-00ADD8.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Development Time](https://img.shields.io/badge/Development%20Time-Approx%2030%20min-pink.svg)
 
 FileSearcher-Brit is a high-performance command-line tool for locating files by modification timestamp across directory structures. Built with Go for speed and cross-platform compatibility.
 
